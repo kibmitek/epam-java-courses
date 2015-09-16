@@ -1,7 +1,7 @@
 /**
  * 
  */
-package start;
+package homework;
 
 /**
  * @author Dmitrii_Semenov
