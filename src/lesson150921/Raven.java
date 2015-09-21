@@ -7,7 +7,7 @@ public class Raven extends Pet implements Chirikable{
 		System.out.println("Karrr!!!");
 	}
 
-	private void specia() {
+	private void special() {
 		// TODO Auto-generated method stub
 		chirik();
 	}
