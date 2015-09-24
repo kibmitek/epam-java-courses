@@ -8,6 +8,8 @@ Martin Fowler - refactoring
 bob martin
 clean code
 clean coder
+Angelica Langer - java generics faq
+Maurice Naftalin and Philip Wadler - java generics and collections
 
 Task:
 Page 24 example
@@ -19,3 +21,7 @@ Task:
 JavaTasksOOP.pdf
 only class hierarchy
 variant #13
+
+modify MyList to add to the end of list
+
+implements MyStack with push() and pop() methods
