@@ -5,6 +5,12 @@ public class MyList<T> {
 	Node<T> first;
 	Node<T> last;
 	
+	private static class Node<T> {
+		T data;
+		Node<T> next;
+		Node<T> prev;
+	}
+	
 	public void addFirst(T data){
 		Node<T> node = new Node<T>();
 		node.data = data;

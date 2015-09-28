@@ -15,13 +15,17 @@ Task:
 Page 24 example
 
 Task:
-my own 8 examples for inheritance
+--my own 8 examples for inheritance
 
 Task:
 JavaTasksOOP.pdf
 only class hierarchy
-variant #13
+--variant #13
 
 ++modify MyList to add to the end of list
 
 ++implements MyStack with push() and pop() methods
+
+--create class with 3 properties. create 3 comparators.
+
+--BrainStates -> to outer classes
