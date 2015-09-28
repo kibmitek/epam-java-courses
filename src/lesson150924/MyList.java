@@ -13,12 +13,21 @@ public class MyList<T> {
 	}
 	public void addLast(T data){
 		Node<T> node = new Node<T>();
+		node.data = data;
+
+//		add first node
 		if(first == null){
 			first = node;
 		}
-		node.data = data;
-		node.next = null;
+//		add intermediate nodes
+		else{
+			node.prev = last;
+			last.next = node;
+		}
+//		link last-var to added node
 		last = node;
+		
+		
 	}
 	
 	@Override

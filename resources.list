@@ -22,6 +22,6 @@ JavaTasksOOP.pdf
 only class hierarchy
 variant #13
 
-modify MyList to add to the end of list
+++modify MyList to add to the end of list
 
-implements MyStack with push() and pop() methods
+++implements MyStack with push() and pop() methods

@@ -1,8 +1,6 @@
-package lesson150924;
+package homework.stack;
 
 public class Node<T> {
-
 	T data;
 	Node<T> next;
-	Node<T> prev;
 }
