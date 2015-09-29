@@ -2,35 +2,18 @@ package lesson150928;
 
 public class Dog {
 	interface BrainState {
-		void feed();
-		void stroke();
+		void feed(Dog dog);
+		void stroke(Dog dog);
 	}
 
-	class GoodMood implements BrainState{
-		public static final int MAX_STROKES = 3;
-		int count;
-		@Override
-		public void feed() {
-			Dog.this.eat();
-			Dog.this.wag();			
-		}
-		@Override
-		public void stroke() {
-			Dog.this.wag();Dog.this.bark();			
-			count++;
-			if(count>= MAX_STROKES){
-				Dog.this.brainState = Dog.this.new BadMood();
-			}
-		}
-	}
 	class BadMood implements BrainState{
 		@Override
-		public void feed() {
+		public void feed(Dog dog) {
 			Dog.this.eat();
-			Dog.this.brainState = Dog.this.new GoodMood();
+			Dog.this.brainState = new GoodMood();
 		}
 		@Override
-		public void stroke() {
+		public void stroke(Dog dog) {
 			Dog.this.bite();
 		}
 		
@@ -40,23 +23,23 @@ public class Dog {
 	
 	public void feed(){
 		System.out.println("--> feed");
-		brainState.feed();
+		brainState.feed(this);
 	}
 	public void stroke(){
 		System.out.println("--> stroke");
-		brainState.stroke();
+		brainState.stroke(this);
 	}
 //
 	private void bite() {
 		System.out.println("bites");
 	}
-	private void eat() {
+	void eat() {
 		System.out.println("eating");
 	}
-	private void bark() {
+	void bark() {
 		System.out.println("barks");
 	}
-	private void wag() {
+	void wag() {
 		System.out.println("wags");
 	}
 }
