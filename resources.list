@@ -26,6 +26,12 @@ only class hierarchy
 
 ++implements MyStack with push() and pop() methods
 
+lesson150928
 --create class with 3 properties. create 3 comparators.
-
 --BrainStates -> to outer classes
+
+lesson150929
+--questions p.1, p.2
+--watch videos about designPatterns
+https://www.coursera.org/course/algs4partII
+http://algs4.cs.princeton.edu/home/
