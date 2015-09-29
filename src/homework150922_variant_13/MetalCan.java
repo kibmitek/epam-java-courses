@@ -1,6 +1,6 @@
 package homework150922_variant_13;
 
-public class MetalCan extends BasePack implements Loadable {
+public class MetalCan extends LoadablePack implements Loadable {
 
 	@Override
 	public void loadIntoVan() {

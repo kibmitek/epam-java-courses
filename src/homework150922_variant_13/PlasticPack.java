@@ -1,6 +1,6 @@
 package homework150922_variant_13;
 
-public class PlasticPack extends BasePack implements Loadable{
+public class PlasticPack extends LoadablePack implements Loadable{
 	
 	public PlasticPack(AggregateStates state, float volume, float price) {
 		
