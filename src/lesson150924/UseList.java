@@ -4,9 +4,10 @@ public class UseList {
 	public static void main(String[] args) {
 		MyList<String> list = new MyList<>();
 		
-		list.addLast("One");
-		list.addLast("Two");
-		list.addLast("Three");
+		list.addFirst("One");
+		list.addFirst("Two");
+		list.addFirst("Three");
+
 		
 		System.out.println(list);
 	}

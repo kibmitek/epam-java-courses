@@ -35,3 +35,14 @@ lesson150929
 --watch videos about designPatterns
 https://www.coursera.org/course/algs4partII
 http://algs4.cs.princeton.edu/home/
+
+lesson151001
+implement iterator as:
+--external class
+--internal class
+--nested static class
+
+--implements Stack based on array with iterator allowed to go from top to bottom
+--push,pop(null if empty),iterator,top(null if empty)/peek,size,isempty.
+--if stack is full - duplicate size. If count of elements < quarter of stack - decrease in 2 times stack size
+--genome: print equal pairs
