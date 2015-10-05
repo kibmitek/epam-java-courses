@@ -2,12 +2,26 @@ package homework150922_variant_13;
 
 public class PlasticPack extends LoadablePack implements Loadable{
 	
-	public PlasticPack(AggregateStates state, float volume, float price) {
-		
+	protected PlasticPack(float volume, float price, AggregateStates state,
+			CoffeeSorts sort) {
+		super(volume, price, state, sort);
+	}
+
+	@Override
+	public void load(Van van) {
+		System.out.println("Loaded Plastic pack into the Van");
+		van.loadPack(this);
 	}
 	
 	@Override
-	public void loadIntoVan() {
-		System.out.println("Plastic pack was loaded into the Van");
+	public String toString() {
+		return
+				"PlasticPack: " + "\n" +
+				"volume: " + this.volume + ";\n" + 
+				"price: " + this.price + ";\n" + 
+				"aggregate state: " + this.state + ";\n" +
+				"sort: " + this.sort + ".\n"
+				;
+				
 	}
 }
