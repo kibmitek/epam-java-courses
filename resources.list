@@ -49,3 +49,8 @@ implement iterator as:
 
 lesson151005
 --make BoundedList(int maxSize) from MyList + implements Over and Under -flow exceptions
+
+lesson151006
+book: Brian Goetz - java concurrency in practice
+book: Maurice Herlihy - multiprocessor programming
+book: Gregory R. Andrews - Foundations of Multithreaded, Parallel, and Distributed Programming
