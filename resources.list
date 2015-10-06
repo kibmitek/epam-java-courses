@@ -54,3 +54,6 @@ lesson151006
 book: Brian Goetz - java concurrency in practice
 book: Maurice Herlihy - multiprocessor programming
 book: Gregory R. Andrews - Foundations of Multithreaded, Parallel, and Distributed Programming
+++make class with static method realize deep copy of the object.method should not throws exceptions, 
+it returns null instead. Write Use-class with 2 help-classes. One of them make not Serializable 
+to demonstrate returning null.
