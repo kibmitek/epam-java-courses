@@ -58,5 +58,14 @@ book: Gregory R. Andrews - Foundations of Multithreaded, Parallel, and Distribut
 it returns null instead. Write Use-class with 2 help-classes. One of them make not Serializable 
 to demonstrate returning null.
 
-lesson151006
+lesson151008
 --generate matrix in parallel. a thread to each row
+
+lesson151012
+--problem of 5 dinning chineese philosophers
+sticks between ph. 
+ph - thread
+chobsticks - resources
+10 sec eating
+20 sec sleeping
+if ph. can not eat in 30 seconds he died
