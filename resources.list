@@ -69,3 +69,8 @@ chobsticks - resources
 10 sec eating
 20 sec sleeping
 if ph. can not eat in 30 seconds he died
+
+lesson151013
+--make BlockingQueue limited with size
+method take send signal that queue is full
+use Lock/Condition
