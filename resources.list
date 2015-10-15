@@ -74,3 +74,7 @@ lesson151013
 --make BlockingQueue limited with size
 method take send signal that queue is full
 use Lock/Condition
+
+lesson151015
+--Counter - try 2 realizations. e.g. inc() for 1M times
+--implement ReadWriteLock based on locks
