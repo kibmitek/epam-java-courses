@@ -78,3 +78,7 @@ use Lock/Condition
 lesson151015
 --Counter - try 2 realizations. e.g. inc() for 1M times
 --implement ReadWriteLock based on locks
+
+lesson151019
+--input data from keybord. scanner. analyze input string, split it, fill db table using prepareStatement. fields: name, birthday, grow, weight.
+--^D - stop input. Extract from table and print data.
