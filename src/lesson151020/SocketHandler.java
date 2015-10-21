@@ -4,16 +4,33 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 public class SocketHandler implements Runnable{
 	private final Socket socket;
 	private final Chat chat;
 	private final PrintWriter printWriter;
 	
+	BlockingQueue<String> messages = new LinkedBlockingQueue<>();
+	
 	public SocketHandler(Chat chat, Socket socket) throws IOException{
 		this.chat = chat;
 		this.socket = socket;
 		printWriter = new PrintWriter(socket.getOutputStream());
+		ChatServer.service.execute(new Runnable() {
+			@Override
+			public void run() {
+				while (true) {
+					try {
+						String message = messages.take();
+						sendViaSocket(message);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		});
 	}
 	
 	@Override
@@ -32,6 +49,10 @@ public class SocketHandler implements Runnable{
 	}
 
 	public void send(String line) {
+		messages.offer(line);
+	}
+	
+	public void sendViaSocket(String line) {
 		printWriter.println(line);
 		printWriter.flush();
 	}
