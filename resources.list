@@ -82,3 +82,6 @@ lesson151015
 lesson151019
 --input data from keybord. scanner. analyze input string, split it, fill db table using prepareStatement. fields: name, birthday, grow, weight.
 --^D - stop input. Extract from table and print data.
+
+lesson151022
+--DBManager - implement method save
