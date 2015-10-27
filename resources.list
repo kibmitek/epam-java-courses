@@ -85,3 +85,11 @@ lesson151019
 
 lesson151022
 --DBManager - implement method save
+
+lesson151027
+--class Roman
+String convert(int number){
+	return romanNumber; 
+	
+--libjdx, tetris with rotate
+}
